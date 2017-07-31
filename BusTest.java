@@ -37,5 +37,11 @@ Person person;
     assertEquals(true, bus.fitUnderLowBridge() );
   }
 
+  @Test 
+  public void cannotFitUnderLowBridge() {
+    Bus tallBus = new Bus(22, "Steve", 22, 15.55);
+    assertEquals(false, tallBus.fitUnderLowBridge() );
+  }
+
 
 }
