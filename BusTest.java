@@ -43,5 +43,10 @@ Person person;
     assertEquals(false, tallBus.fitUnderLowBridge() );
   }
 
+  @Test
+  public void busStartsEmpty() {
+    assertEquals(0, bus.passengerCount());
+  }
+
 
 }

@@ -33,5 +33,15 @@ class Bus{
     return this.height < 15;
   }
 
+  public int passengerCount() {
+    int count = 0;
+    for( Person passenger : this.passengers) {
+      if(passenger != null) {
+        count++;
+      }
+    }
+    return count;
+  }
+
 
 }
