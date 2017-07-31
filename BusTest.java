@@ -5,12 +5,18 @@ public class BusTest {
 
 Bus bus;
 Person person;
+BusStop busStop;
 
   @Before
   public void before() {
     bus = new Bus(35, "Dave", 20, 14.95);
     person = new Person();
+    busStop = new BusStop(1, "Westport");
+    busStop = new BusStop(2, "Gyle");
+    busStop = new BusStop(3, "Airport");
   }
+
+    
 
   @Test
   public void hasRoute() {
