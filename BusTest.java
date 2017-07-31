@@ -54,6 +54,13 @@ Person person;
     assertEquals(1, bus.passengerCount());
   }
 
+  @Test
+  public void cannotBoardBusWhenFull() {
+    for (int p = 0; p < 30; p++) {
+      bus.boarded( person );
+    }
+    assertEquals( 20, bus.passengerCount());
+  }
 
 
 }
