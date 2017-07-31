@@ -32,5 +32,10 @@ Person person;
     assertEquals( 14.95, bus.getHeight(), 0.01);
   }
 
+  @Test
+  public void canFitUnderLowBridge() {
+    assertEquals(true, bus.fitUnderLowBridge() );
+  }
+
 
 }

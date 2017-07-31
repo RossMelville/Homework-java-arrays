@@ -29,6 +29,9 @@ class Bus{
     return this.height;
   }
 
+  public boolean fitUnderLowBridge() {
+    return this.height < 15;
+  }
 
 
 }
