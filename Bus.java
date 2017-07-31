@@ -21,4 +21,10 @@ class Bus{
     return this.driver;
   }
 
+  public int getWeight() {
+    return this.weight;
+  }
+
+
+
 }
