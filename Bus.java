@@ -43,5 +43,18 @@ class Bus{
     return count;
   }
 
+  public void boarded( Person passenger ) {
+    if (busIsFull()) {
+      return;
+    }
+    int passengerCount = passengerCount();
+    passengers[passengerCount] = passenger;
+  }
+
+  public boolean busIsFull() {
+    return passengerCount() == passengers.length;
+  }
+
+
 
 }

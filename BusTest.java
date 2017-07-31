@@ -48,5 +48,12 @@ Person person;
     assertEquals(0, bus.passengerCount());
   }
 
+  @Test
+  public void personCanBoardBus() {
+    bus.boarded( person );
+    assertEquals(1, bus.passengerCount());
+  }
+
+
 
 }
