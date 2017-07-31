@@ -25,6 +25,10 @@ class Bus{
     return this.weight;
   }
 
+  public double getHeight() {
+    return this.height;
+  }
+
 
 
 }

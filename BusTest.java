@@ -27,4 +27,10 @@ Person person;
     assertEquals( 20, bus.getWeight() );
   }
 
+  @Test
+  public void hasHeight() {
+    assertEquals( 14.95, bus.getHeight(), 0.01);
+  }
+
+
 }
