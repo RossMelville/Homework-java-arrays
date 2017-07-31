@@ -62,5 +62,12 @@ Person person;
     assertEquals( 20, bus.passengerCount());
   }
 
+  @Test
+  public void shouldEmptyAtLastStop() {
+    bus.boarded( person );
+    bus.empty();
+    assertEquals(0, bus.passengerCount());
+  }
+
 
 }

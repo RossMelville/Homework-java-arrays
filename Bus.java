@@ -55,6 +55,12 @@ class Bus{
     return passengerCount() == passengers.length;
   }
 
+  public void empty() {
+    for( int p = 0; p < passengers.length; p++) {
+      passengers[p] = null;
+    }
+  }
+
 
 
 }
