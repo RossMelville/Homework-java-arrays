@@ -10,6 +10,10 @@ public class BusStop {
     this.passengers = new Person[6];
   }
 
+  public int getNumber() {
+    return this.number;
+  }
+
 
 
 }
