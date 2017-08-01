@@ -18,6 +18,16 @@ public class BusStop {
     return this.name;
   }
 
+  public int passengerCount() {
+    int count = 0;
+    for (Person passenger : this.passengers) {
+      if(passenger != null) {
+        count++;
+      }
+    }
+    return count;
+  }
+
 
 
 }

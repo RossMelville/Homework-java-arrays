@@ -25,5 +25,9 @@ BusStop busStop;
     assertEquals("Westport", busStop.getName() );
   }
 
+  @Test
+  public void busStopStartsEmpty() {
+    assertEquals(0, busStop.passengerCount());
+  }
 
 }
