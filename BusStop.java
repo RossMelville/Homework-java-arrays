@@ -28,6 +28,18 @@ public class BusStop {
     return count;
   }
 
+  public void enter( Person passenger ) {
+    if (busStopFull()) {
+      return;
+    }
+    int passengerCount = passengerCount();
+    passengers[passengerCount] = passenger;
+  }
+
+  public boolean busStopFull() {
+    return passengerCount() == passengers.length;
+  }
+
 
 
 }

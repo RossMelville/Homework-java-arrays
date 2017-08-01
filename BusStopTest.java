@@ -30,4 +30,10 @@ BusStop busStop;
     assertEquals(0, busStop.passengerCount());
   }
 
+  @Test
+  public void personEnterBusStop() {
+    busStop.enter( person );
+    assertEquals(1, busStop.passengerCount());
+  }
+
 }
