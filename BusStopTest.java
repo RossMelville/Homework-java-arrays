@@ -20,4 +20,10 @@ BusStop busStop;
     assertEquals(1, busStop.getNumber() );
   }
 
+  @Test
+  public void hasName() {
+    assertEquals("Westport", busStop.getName() );
+  }
+
+
 }

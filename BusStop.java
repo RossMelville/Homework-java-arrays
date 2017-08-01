@@ -14,6 +14,10 @@ public class BusStop {
     return this.number;
   }
 
+  public String getName() {
+    return this.name;
+  }
+
 
 
 }
