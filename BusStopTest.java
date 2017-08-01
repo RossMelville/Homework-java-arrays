@@ -39,8 +39,9 @@ BusStop busStop;
   @Test
   public void personBoardsBus() {
     busStop.enter( person );
-    assertEquals(0, busStop.passengerCount);
-    assertEquals(1, bus.passengerCount);
+    busStop.boardBus ( bus, person );
+    assertEquals(0, busStop.passengerCount());
+    assertEquals(1, bus.passengerCount());
   }
 
 }

@@ -40,6 +40,15 @@ public class BusStop {
     return passengerCount() == passengers.length;
   }
 
+  public void leave() {
+    int passengerCount = passengerCount();
+    passengers[passengerCount - 1] = null;
+  }
+
+  public void boardBus(Bus bus, Person person) {
+    leave();
+    bus.boarded(person);
+  }
 
 
 }
